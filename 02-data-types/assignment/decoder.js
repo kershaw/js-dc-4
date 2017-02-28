@@ -4,7 +4,7 @@
  */
 
  // Your code here
-
+var code = [];
  /**
   * Question 2
   * Add the following characters to the end of the code array:
@@ -14,7 +14,8 @@
   */
 
 // Your code here
-
+var code = ['x', 'u', 's', 'a', 'e', 'l', 'p', 'e', 'e', 'n','i', 't', 'l', 'a', 'v', 'o', 'x', 'e', 'r',
+ 'o', 'm', 'c'];
 /**
  * Question 3
  * Remove the first and last elements of the array.
@@ -22,6 +23,9 @@
  */
 
 // Your code here
+var code = ['x', 'u', 's', 'a', 'e', 'l', 'p', 'e', 'e', 'n', 'i', 't', 'l', 'a', 'v', 'o', 'x', 'e', 'r','o', 'm', 'c'];
+var newCode = code.slice(1,-1);
+console.log(newCode);
 
 /**
  * Question 4
@@ -29,6 +33,9 @@
  */
 
 // Your code here
+var code = ['x', 'u', 's', 'a', 'e', 'l', 'p', 'e', 'e', 'n', 'i', 't', 'l', 'a', 'v', 'o', 'x', 'e', 'r','o', 'm', 'c'];
+code.reverse();
+console.log(code);
 
 /**
  * Question 5
@@ -37,6 +44,9 @@
  */
 
 // Your code here
+var code = ['x', 'u', 's', 'a', 'e', 'l', 'p', 'e', 'e', 'n', 'i', 't', 'l', 'a', 'v', 'o', 'x', 'e', 'r','o', 'm', 'c'];
+code.splice(22, 0, "e");
+console.log(code);
 
 /**
  * Question 6
@@ -45,6 +55,10 @@
  */
 
 // Your code here
+var code = ['x', 'u', 's', 'a', 'e', 'l', 'p', 'e', 'e', 'n', 'i', 't', 'l', 'a', 'v', 'o', 'x', 'e', 'r', 'o', 'm', 'c'];
+code.splice(4, 1, 'thisisaspaceiswear');
+code.splice(13,1,'thisisaspaceiswear');
+console.log(code);
 
 /**
  * Question 7
