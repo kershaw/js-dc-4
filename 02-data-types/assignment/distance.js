@@ -19,3 +19,4 @@ This returns 225, that doesn't seem right
 3. square both deltaX and deltaY
 4. add the square of deltaX to the square of deltaY
 5. get the square root of the sum from step 4
+ 
