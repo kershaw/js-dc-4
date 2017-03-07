@@ -122,6 +122,7 @@
 // }
 
 // A more condensed `for` loop for working with arrays
+// grade = i the iterator
 // var grades = [87, 95.5, 40, 79, 20]
 //
 // for ( grade in grades ) {
