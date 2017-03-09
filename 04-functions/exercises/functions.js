@@ -21,9 +21,9 @@
 */
 
 // Function declaration
-// function myFirstFunction() {
-//   console.log( 'this is my first function' )
-// }
+function myFirstFunction() {
+  console.log( 'this is my first function' )
+}
 //
 // myFirstFunction
 // myFirstFunction()
@@ -43,6 +43,11 @@
 
 */
 
+function sayThanks ( name ) {
+  console.log("Thanks " + name )
+}
+
+sayThanks ( 'Obama')
 
 // // ----------
 // var number = 0
@@ -166,11 +171,11 @@
 
 
 // Functions as variables
-var myFunction = function () {
-  console.log( 'myFunction variable' )
-}
-
-myFunction()
+// var myFunction = function () {
+//   console.log( 'myFunction variable' )
+// }
+//
+// myFunction()
 
 
 /*
@@ -181,20 +186,20 @@ myFunction()
 
 
 // Pure functions
-function isCurrentYearLeapYear() {
-
-   const year = new Date().getFullYear()
-
-   if(year % 4 !== 0) {
-     return false
-   } else if(year % 100 != 0) {
-     return true
-   } else if(year % 400 != 0) {
-     return false
-   } else {
-     return true
-   }
-
-}
-
-console.log( 'is it a leap year? ', isCurrentYearLeapYear() )
+// function isCurrentYearLeapYear() {
+//
+//    const year = new Date().getFullYear()
+//
+//    if(year % 4 !== 0) {
+//      return false
+//    } else if(year % 100 != 0) {
+//      return true
+//    } else if(year % 400 != 0) {
+//      return false
+//    } else {
+//      return true
+//    }
+//
+// }
+//
+// console.log( 'is it a leap year? ', isCurrentYearLeapYear() )

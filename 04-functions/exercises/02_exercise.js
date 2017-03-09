@@ -10,3 +10,8 @@ Call both functions twice, passing in different numbers as arguments
 each time.
 
 */
+function addNumber (numOne, numTwo) {
+  return numOne + numTwo
+}
+var extraNumber = addNumber (3, 7)
+console.log(extraNumber)
