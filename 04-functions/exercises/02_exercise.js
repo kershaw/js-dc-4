@@ -11,7 +11,11 @@ each time.
 
 */
 function addNumber (numOne, numTwo) {
-  return numOne + numTwo
+  console.log( numOne + numTwo)
 }
-var extraNumber = addNumber (3, 7)
-console.log(extraNumber)
+ addNumber (3, 7)
+
+ function subtractNumber (numOne, numTwo) {
+   console.log( numOne - numTwo)
+ }
+  subtractNumber (3, 7)

@@ -42,12 +42,12 @@ function myFirstFunction() {
   2. Using Parameters and Arguments
 
 */
-
-function sayThanks ( name ) {
-  console.log("Thanks " + name )
-}
-
-sayThanks ( 'Obama')
+//
+// function sayThanks ( name ) {
+//   console.log("Thanks " + name )
+// }
+//
+// sayThanks ( 'Obama')
 
 // // ----------
 // var number = 0
@@ -60,7 +60,7 @@ sayThanks ( 'Obama')
 // }
 
 
-// // ----------
+// ----------
 // function addNumbers( numOne, numTwo ) {
 //   console.log(numOne + numTwo)
 // }

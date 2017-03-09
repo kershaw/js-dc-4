@@ -1,11 +1,21 @@
+// var i = 0, CombinedArray = [];
+// for (; i < suits.length; i++) {
+//   CombinedArray[i] = suits[i] + ranks[i];
+// }
+// for (; i < ranks.length; i++) {
+//   CombinedArray[i] = ranks[i];
+// }
+// }
 /*
 
 Card Game of War Exercise Part 1.
 
 */
-
+//
 var suits = ['hearts', 'clubs', 'spades', 'diamonds']
 var ranks = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'queen', 'king']
+var deckOfCards = []
+
 
 /*
 
@@ -20,7 +30,21 @@ deckOfCards.
 
 */
 
+function createDeck (ranks, suits) {
 
+  for (var i = 0; i < suits.length; i++) {
+  //  deckOfCards[i] = suits[i] + ranks[i];
+    for (var j = 0; j < ranks.length; j++) {
+      // deckOfCards[i] = ranks[i];
+      deckOfCards.push( suits[i] + " " + ranks[j] )
+      // console.log(suits[i] + " " + ranks[j])
+    }
+
+  }
+
+}
+createDeck( ranks, suits )
+//console.log(deckOfCards)
 
 
 /*
@@ -32,8 +56,9 @@ Don't worry about removing the card from deckOfCards.
 
 */
 
+var getRandomCard = deckOfCards[Math.floor(Math.random() * deckOfCards.length)]
 
-
+console.log(getRandomCard)
 
 /*
 
