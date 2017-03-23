@@ -33,11 +33,8 @@ deckOfCards.
 function createDeck (ranks, suits) {
 
   for (var i = 0; i < suits.length; i++) {
-  //  deckOfCards[i] = suits[i] + ranks[i];
     for (var j = 0; j < ranks.length; j++) {
-      // deckOfCards[i] = ranks[i];
       deckOfCards.push( suits[i] + " " + ranks[j] )
-      // console.log(suits[i] + " " + ranks[j])
     }
 
   }
@@ -56,10 +53,19 @@ Don't worry about removing the card from deckOfCards.
 
 */
 
-var getRandomCard = deckOfCards[Math.floor(Math.random() * deckOfCards.length)]
+// var getRandomCard = deckOfCards[Math.floor(Math.random() * deckOfCards.length)]
+//
+// console.log(getRandomCard)
 
-console.log(getRandomCard)
+function getRandomCard ( deck ) {
+  var x = Math.floor() * deck.length
+  var temp = deck [ x ]
+  // deck.splice (x , 1)
+  return temp
+}
 
+var myRandomCard = getRandomCard (deckOfCards)
+console.log(myRandomCard)
 /*
 
 Write a function called dealHand that takes a number as it's only
@@ -73,8 +79,26 @@ the cards as an array.
 
 */
 
+function dealHand ( handLength ) {
+  handLength = handLength || 1
 
+  if ( handLength === 1 ) {
+    return getRandomCard ( deckOfCards )
+  } else {
+    var hand = []
+    for ( var i = 1; i <= handLength; i++) {
+      hand.push( getRandomCard ( deckOfCards ))
+    }
+    return hand
+  }
 
+}
+
+var myHandofCArds = dealHand ()
+console.log(myHandofCArds)
+
+var mySecondHand = dealHand (10)
+console.log( mySecondHand )
 
 /*
 
@@ -85,7 +109,8 @@ Deal both playerOneCards and playerTwoCards 7 cards each.
 
 */
 
-
+var playerOneCards = dealHand ( 7 )
+var playerTwoCards = dealHand ( 7 )
 
 
 /*
@@ -95,9 +120,13 @@ array and prints each card.
 
 */
 
+function showHand ( hand ) {
 
+  console.log( "Your hand is: \n -" hand.join("\n -"))
 
+}
 
+showHand ( playerOneCards )
 /*
 
 Get pumped:

@@ -20,3 +20,12 @@ Apple, Red, 0.78
 Nuts, Brown, 2.23
 
 */
+var myJSON = require('./data.json')
+console.log(myJSON["Store Name"]+" " + "Current Stock")
+
+var itemHeadings = Object.keys (myJSON.Foods[0] )
+console.log (itemHeadings.join(', '))
+
+for (i=0; i < myJSON.Foods.length; i++) {
+  console.log(myJSON.Foods[i].name)
+}

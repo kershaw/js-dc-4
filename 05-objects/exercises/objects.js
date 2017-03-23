@@ -20,7 +20,7 @@ executed before moving on!
 1. Anatomy of an Object
 
 */
-
+//
 // Declaring our first object
 // var Person = {
 //   'first name': 'Zakk',
@@ -42,7 +42,7 @@ executed before moving on!
 2. Working with Objects
 
 */
-
+//
 // Getting values from our object
 // Person['first name'] // Bracket notation
 // Person.lastName // Dot notation
@@ -79,6 +79,7 @@ executed before moving on!
 */
 
 // var jsonData = {
+//   "Store Name": "Quick E Mart"
 //   "Foods": [
 //     {"name":"aubergine", "color":"purple", "price": 1.59},
 //     {"name":"apple", "color":"red", "price": 0.78},
@@ -95,7 +96,7 @@ executed before moving on!
 
 */
 
-// Part 1
+// Part 1  DONT USE THIS. ONLY USE PART 2.
 // var Car = {
 //   model: '',
 //   make: '',

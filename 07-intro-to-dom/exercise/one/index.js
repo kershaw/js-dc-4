@@ -16,6 +16,8 @@ Getting stuff from the DOM
 // var title = document.getElementById('title')
 // or document.querySelector('title')
 
+var title = document.getElementsByTagName('h1')
+console.log(title)
 
 // Get the text of #title
 // console.log( title ) // will print the html element

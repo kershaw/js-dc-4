@@ -174,4 +174,4 @@ function getPumped() {
 }
 
 // Uncomment the following line to see it work:
-// getPumped()
+getPumped()

@@ -14,15 +14,17 @@ Before you get started, you should familiarize yourself with the HTML document t
 Get the DOM nodes for the table of contents and the article body and save them both as variables
 
 */
-
-
-
+var heading = document.getElementsByClassName('heading')
+// console.log(heading)
+var body = document.getElementById('article-body')
+var toc = document.getElementById('table-of-contents')
 /*
 
 get an array of every heading in the document and store them in a variable called documentHeadings
 
 */
-
+var documentHeadings = heading
+console.log(heading)
 
 
 /*
@@ -33,7 +35,20 @@ To generate our table of contents we need to do a couple of things:
 2. Inside our loop, we need to clone the curent element from the documentHeadings array and append it to the table of contents element
 
 */
+var clones = []
 
+//appending to the DOM before all clones were generated creates an infinite loop, so separate cloning and appending into two loops #sopro
+
+for (var i = 0; i < heading.length;  i++) {
+  // console.log(heading.length)
+  clones[i] = heading[i].cloneNode(true)
+  // toc.appendChild(clone)
+}
+
+for (var i = 0; i < clones.length; i++) {
+  // console.log(heading.length)
+  toc.appendChild(clones[i])
+}
 
 
 /*
